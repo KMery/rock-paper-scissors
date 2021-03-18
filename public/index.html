@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPT</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/styles/index.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <h1>Rock, Paper or Scissor</h1>
+        <h2>Choose an option</h2>
+        <div class="choice" id="options">
+            <input type="image" src="../assets/icons/stone.svg" value="Rock" class="buttons" onclick="chooseOption(this.value)">
+            <input type="image" src="../assets/icons/paper.svg" value="Paper" class="buttons" onclick="chooseOption(this.value)">
+            <input type="image" src="../assets/icons/scissors.svg" value="Scissor" class="buttons" onclick="chooseOption(this.value)">
+        </div>
+        <!-- After processing the result this would be the only div that you can see -->
+        <div id="show_selections" class="choice">
+            <input type="button" value="Reset game" id="reset" onclick="resetGame()">
+            <input type="image" id="user_choice_image" class="buttons" title="Your choice">
+            <input type="image" id="computer_choice_image" class="buttons" title="Computer choice">
+            <h1 id="result_label"></h1>
+        </div>
+    </div>
+    <!-- Calling js file -->
+    <script src="../assets/javascripts/index.js"></script>
+</body>
+</html>
